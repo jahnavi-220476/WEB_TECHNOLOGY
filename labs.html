@@ -1,0 +1,328 @@
+
+<!-- task1 -->
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+variable declaration
+        </title>
+        
+    </head>
+<body>
+<script lanuage="javascript" type="text/javascript">
+   var  a=10
+   let  b=29
+   const  c=47
+    console.log("a:",a);
+    console.log("b:",b);
+    console.log("c:",c);
+
+</script>
+
+</body>
+
+
+</html> -->
+
+<!--task2-->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>
+                task2
+        </title>
+</head>
+
+<body>
+<script lanuage="javascript" type="text/javascript">
+
+function  user1(){
+    console.log("hii this is my website using normal function");
+
+}
+user1();
+
+
+const user2= () =>{
+    console.log("hii this is my website using arrow function");
+};
+user2()
+
+
+function addition(d,e){
+    return d+e;
+}
+console.log("addition(2,3):",addition(2,3))
+
+
+
+const subtraction =(d,e)=>d-e;
+
+console.log("subtraction:",subtraction(24,5));
+    
+
+const multiplication =(d,e)=>d*e;
+
+console.log("multiplication:",multiplication(24,5));
+
+
+const division =(d,e)=>d/e;
+
+console.log("division:",division(24,5));
+
+</script>
+        
+</body>
+
+</html>
+-->
+
+
+
+<!--task3-->
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+ task3
+        </title>
+
+    <script lanuage="javascript" type="text/javascript">
+   
+    var name=prompt("please enter your name");
+    console.log("name",name);
+    
+   
+
+</script>
+        
+    </head>
+<body>
+
+
+</body>
+
+</html>
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+task 4
+        </title>
+        
+    </head>
+
+
+
+<!--
+
+<p id="1">this is the text</p>
+
+<button onclick="changetext()">change text</button>
+<button onclick="addtext()">add text</button>
+<button onclick="removetext()">remove text</button>
+<script language="javascript" type="text/javascript">
+function changetext(){
+    document.getElementById("1").innerHTML="txt changed";
+}
+
+function addtext(){
+    document.getElementById("1").innerHTML+="txt changed";
+}
+
+function removetext(){
+    document.getElementById("1").innerHTML="";
+}
+
+
+
+
+</script>
+-->
+
+
+
+
+<!--task5-->
+
+
+
+
+
+<body>
+
+    <h2 id="heading">Style Me Using JavaScript</h2>
+
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="toggleStyle()">Toggle Style</button>
+
+    <script>
+       
+        function changeStyle() {
+            let h = document.getElementById("heading");
+            h.style.color = "white";
+            h.style.backgroundColor = "blue";
+            h.style.fontSize = "30px";
+            h.style.padding = "10px";
+        }
+
+       
+        function toggleStyle() {
+            let h = document.getElementById("heading");
+
+            if (h.style.color === "white") {
+                h.style.color = "black";
+                h.style.backgroundColor = "yellow";
+                h.style.fontSize = "24px";
+            } else {
+                h.style.color = "white";
+                h.style.backgroundColor = "green";
+                h.style.fontSize = "30px";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+
+<!--task6-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 6</title>
+</head>
+<body>
+
+    <h2>Task 6 Demo</h2>
+ 
+    <button onclick="showMessage()">Click Me</button>
+
+    <br><br>
+
+    
+    <p id="box"
+       onmouseover="mouseOver()"
+       onmouseout="mouseOut()"
+       style="width:200px; padding:10px; border:1px solid black;">
+        Hover over me
+    </p>
+
+    <br>
+
+   
+    <form onsubmit="submitForm()">
+        <input type="text" placeholder="Enter name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        
+        function showMessage() {
+            alert("Button clicked!");
+        }
+
+        
+        function mouseOver() {
+            document.getElementById("box").style.backgroundColor = "lightblue";
+        }
+
+        
+        function mouseOut() {
+            document.getElementById("box").style.backgroundColor = "white";
+        }
+
+        
+        function submitForm() {
+            console.log("Form submitted successfully");
+        }
+    </script>
+
+</body>
+</html>
+
+-->
+
+
+
+
+
+<!--task7-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 7 - Interactive Webpage</title>
+</head>
+<body>
+
+    <h2>Task 7 Demo</h2>
+
+    
+    <button onclick="greetUser()">Enter Your Name</button>
+    <p id="greet"></p>
+
+    <hr>
+
+   
+    <h3>Simple Form</h3>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="username" placeholder="Enter username">
+        <br><br>
+        <input type="password" id="password" placeholder="Enter password">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="error" style="color:red;"></p>
+
+    <hr>
+
+    
+    <button onclick="printPage()">Print Page</button>
+
+    <script>
+        
+        function greetUser() {
+            let name = prompt("Enter your name:");
+            document.getElementById("greet").innerHTML =
+                "Hello, " + name + "! Welcome ";
+
+        
+        function validateForm() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if (user === "" || pass === "") {
+                document.getElementById("error").innerHTML =
+                    "All fields are required!";
+                return false;
+            }
+            console.log("Form validated successfully");
+            return true;
+        }
+
+        
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
+-->
