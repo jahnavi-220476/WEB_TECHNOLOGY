@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROYAL REST</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .nav {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo_class {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .items {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        
+
+        
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background: rgba(0,0,0,0.5);
+             
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        
+        .rooms {
+            background: white;
+            padding: 40px;
+        }
+
+        .rooms h2 {
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        .room-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .room {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .room img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room h3 {
+            margin: 10px 0;
+        }
+
+        .room p {
+            padding: 0 10px;
+        }
+
+        .book-btn {
+            background: #000;
+            color: white;
+            padding: 2px;
+            margin: 15px;
+            border: none;
+            
+            border-radius: 5px;
+        }
+
+       
+      
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .logo{
+            border-radius:5px;
+            
+            border: 1px solid #ccc;
+            
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+<header class="nav">
+    <div class="logo">
+    <img src="logo.jpeg" width="83px" height="83px"></div>
+    <span class="logo_class">ROYAL REST</span>
+    
+    <ul class="items">
+        <li>Contact</li>
+        <li>Signup</li>
+        <li>Login</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+    </ul>
+      
+</header>
+
+<section class="hero">
+    
+    <h1>Welcome to Royal Rest</h1>
+    <p>Experience luxury and comfort</p>
+</section>
+
+<section class="rooms">
+    <h2>Our Rooms</h2>
+
+    <div class="room-list">
+
+        <div class="room">
+            <img src="room1.jfif" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>King-size bed, city view</p>
+            <p><b>15000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button>
+        </div>
+
+        <div class="room">
+            <img src="room2.jfif" alt="Suite">
+            <h3>Suite</h3>
+            <p>Luxury suite with ocean view</p>
+            <p><b>25000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button>
+        </div>
+
+        <div class="room">
+            <img src="room3.jfif" alt="Standard Room">
+            <h3>Standard Room</h3>
+            <p>Comfortable & affordable</p>
+            <p><b>10000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy 2025 Royal Rest. All rights reserved.
+</footer>
+
+</body>
+</html>
