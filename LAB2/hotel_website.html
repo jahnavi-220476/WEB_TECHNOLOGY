@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROYAL REST</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="toggle">
+
+<header class="nav">
+    <div class="logo">
+        <img src="logo.jpeg" width="83px" height="83px">
+    </div>
+    <span class="logo_class">ROYAL REST</span>
+    
+    <ul class="items">
+        <li><a href="#signup">Signup</a></li>
+        <li><a href="#login">Login</a></li>
+        <li>Contact</li>
+        <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+        <form class="search-box">
+            <input type="search" placeholder="Search...">
+        </form>
+    </ul>
+      
+    <div class="topbar">
+        <label for="toggle" class="menu-btn">...</label>
+    </div>
+</header>
+
+<aside class="sidebar">
+    <label for="toggle" class="close-btn">x</label>
+    <h4>About</h4>
+    <h4>Home</h4>
+    <h4>Contact</h4>
+    <h4>&Help</h4>
+</aside>
+
+<section class="hero">
+    <h1>Welcome to Royal Rest</h1>
+    <p>Experience luxury and comfort</p>
+</section>
+
+<section class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-list">
+        <div class="room">
+            <img src="room1.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>King-size bed, city view</p>
+            <p><b>15000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button>
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Suite">
+            <h3>Suite</h3>
+            <p>Luxury suite with ocean view</p>
+            <p><b>25000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button> 
+        </div>
+        <div class="room">
+            <img src="room3.jpg" alt="Standard Room">
+            <h3>Standard Room</h3>
+            <p>Comfortable & affordable</p>
+            <p><b>10000(RS) / night</b></p>
+            <button class="book-btn">Book Now</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="signup" class="form-section">
+  <div class="form-box">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="switch">
+      Already have an account? <a href="#login">Login</a>
+    </p>
+    <a href="#" class="close-form">x</a>
+  </div>
+</section>
+
+
+<section id="login" class="form-section">
+  <div class="form-box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p class="switch">
+      Don't have an account? <a href="#signup">Sign up</a>
+    </p>
+    <a href="#" class="close-form">x</a>
+  </div>
+</section>
+<footer>
+    &copy 2025 Royal Rest. All rights reserved.
+</footer>
+</body>
+</html>
