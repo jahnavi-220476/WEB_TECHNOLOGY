@@ -1,0 +1,259 @@
+ body {
+            margin: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .nav {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo_class {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .items {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .book-btn:hover{
+            transform:scale(1.1);
+            background-color: #60615f;
+        }
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .rooms {
+            background: white;
+            padding: 40px;
+        }
+
+        .rooms h2 {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .room-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .room {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .room img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room h3 {
+            margin: 10px 0;
+        }
+
+        .room p {
+            padding: 0 10px;
+        }
+
+        .book-btn {
+            background: #000;
+            color: white;
+            padding: 2px;
+            margin: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .items li {
+            cursor: pointer;
+        }
+       
+        .items li:hover {
+            transform:scale(1.1);
+        }
+      
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .logo{
+            border-radius:5px;
+            border: 1px solid #ccc;
+        }
+
+        .sidebar,.menu-btn,.close-btn,.header {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #toggle {
+            display: none;   
+        }
+
+        .menu-btn {
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -260px;
+            width: 260px;
+            height: 100vh;
+            background: #424141;
+            color: rgb(243, 239, 239);
+            padding: 20px;
+            transition: 0.3s;
+            z-index: 1000;
+        }
+
+        #toggle:checked ~ .sidebar {
+            right: 0;
+        }
+
+        .close-btn {
+            font-size: 26px;
+            cursor: pointer;
+            display: block;
+            text-align: right;
+        }
+   
+        .header {
+            height: 60px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .search-box input {
+            width: 200px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        .sidebar h4{
+            margin-bottom: 25px;
+        }
+
+        
+        .form-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .form-section:target {
+            display: flex;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-form {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #979292;
+        }
+
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background: #000;
+            color: rgb(138, 134, 134);
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background: #60615f;
+        }
+
+        .form-box .switch {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .form-box .switch a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-box .switch a:hover {
+            text-decoration: underline;
+        }
+
+      .items  a {
+    color: #e7eaee;      
+    text-decoration: none;
+    
+}
+
+.items a:hover {
+    color: #f0eeee;       
+    text-decoration: underline; 
+}
+.fa-solid {
+    color: rgb(235, 230, 230) ;
+}
+
+.hidden {
+  display: none;
+}
+
