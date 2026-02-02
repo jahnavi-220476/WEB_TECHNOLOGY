@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROYAL REST</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="toggle">
+
+<header class="nav">
+    <div class="logo">
+        <img src="logo.jpeg" width="83px" height="83px">
+    </div>
+    <span class="logo_class">ROYAL REST</span>
+    
+    <ul class="items">
+        <li>  <a href="register.html" target="_blank" class="signup-button">Sign Up</a></li>
+        <li><a href="login.html" target="_blank" class="login-button">Login</a></li>
+        <li>Contact</li>
+        <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+        <form class="search-box">
+            <input type="search" placeholder="Search...">
+        </form>
+    </ul>
+      
+    <div class="topbar">
+        <label for="toggle" class="menu-btn">...</label>
+    </div>
+</header>
+
+<aside class="sidebar">
+    <label for="toggle" class="close-btn">x</label>
+    <h4>About</h4>
+    <h4>Home</h4>
+    <h4>Contact</h4>
+    <h4>&Help</h4>
+</aside>
+
+<section class="hero">
+    <h1>Welcome to Royal Rest</h1>
+    <p>Experience luxury and comfort</p>
+</section>
+
+<section class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-list">
+        <div class="room">
+            <img src="room1.jpg" alt="Deluxe Room">
+
+
+<h3>Deluxe Room</h3>
+<p>King size bed, city view</p>
+
+<p>
+ <b> Price: </b><span id="deluxePrice" class="price">15000</span> / night
+</p>
+
+<p>
+  <b>Rooms Available: </b><span id="deluxeCount">5</span>
+</p>
+
+<p>
+ <b> Status:</b> <span id="deluxeStatus">Available</span>
+</p>
+
+<button class="book-btn" onclick="bookDeluxeRoom()">Book Now</button>
+
+
+            
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Suite">
+            <h3>Suite</h3>
+            <p>
+ <b> Price: </b><span id="suitePrice" class="price">30000</span> / night
+</p>
+<p>Luxury suite with ocean view</p>
+            <p>
+  <b>Rooms Available: </b><span id="suiteCount">3</span>
+</p>
+<p>
+ <b> Status:</b> <span id="suiteStatus">Available</span>
+</p>
+
+<button class="book-btn" onclick="booksuiteRoom()">Book Now</button>
+            
+        </div>
+        <div class="room">
+            <img src="room3.jpg" alt="Standard Room">
+            <h3>Standard Room</h3>
+             <p>
+ <b> Price: </b><span id="standardPrice" class="price">10000</span> / night
+</p>
+            <p>Comfortable & affordable</p>
+          <p>
+  <b>Rooms Available: </b><span id="standardCount">4</span>
+</p>   
+
+<p>
+ <b> Status:</b> <span id="standardStatus">Available</span>
+</p>
+            <button class="book-btn" onclick="bookStandardRoom()">Book Now</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="signup" class="form-section">
+
+</section>
+
+
+<section id="login" class="form-section" action="login.php" method="POST">
+ 
+</section>
+<footer>
+    &copy 2025 Royal Rest. All rights reserved.
+</footer>
+<script src="javascript.js">
+</script>
+</body>
+</html>
