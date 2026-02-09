@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 if ($result->num_rows == 1) {
     $row = $result->fetch_assoc();
 
-    // PASSWORD is in ALL CAPS in DB
+    
     if ($password == $row['PASSWORD']) {
         echo "Login successful! Welcome " . $row['USERNAME'];
     } else {

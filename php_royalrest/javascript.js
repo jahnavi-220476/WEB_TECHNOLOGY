@@ -129,5 +129,14 @@ function bookStandardRoom() {
         console.log("No rooms available");
     }
 }
+function openBooking(room, price) {
+    document.getElementById("roomType").value = room;
+    document.getElementById("roomPrice").value = price;
+
+    document.getElementById("booking").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
 
 

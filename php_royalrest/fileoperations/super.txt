@@ -1,0 +1,8 @@
+the data stored in memory can be of many types. For example, a student roll number is 
+stored as a numeric value and his or her address is stored as alphanumeric characters. Python 
+has various standard data types that are used to define the operations possible on them and 
+the storage method for each of them. 
+
+If you want to include either type of quote character within the string, the simplest way is to 
+delimit the string with the other type. If a string is to contain a single quote, delimit it with 
+double quotes and vice versa: 

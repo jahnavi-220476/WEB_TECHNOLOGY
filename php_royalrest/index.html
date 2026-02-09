@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>upload payment screenshot</title>
+</head>
+<body>
+    <h2>payment screenshot</h2>
+    <form method="POST" action="upload.php"enctype="multipart/form-data">
+        <label>Booking_ID:</label>
+        <input type="text" name="booking_id" required>
+        <br><br>
+<label>Upload screenshot:</label>
+<input type="file" name="payment_image" accept="image/*"  required> <!-- allows only image files -->
+<br><br>
+        <button type="submit" name="upload" r>upload</button>
+
+
+</form>
+</body>
+</html>
+
